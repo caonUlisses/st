@@ -107,17 +107,17 @@ static const char *colorname[] = {
   [3] = "#d79921", /* yellow  */
   [4] = "#458588", /* blue    */
   [5] = "#b16286", /* magenta */
-  [6] = "#689d6a", /* cyan    */
+  [6] = "#83a598", /* cyan    */
   [7] = "#a89984", /* white   */
 
   /* 8 bright colors */
-  [8]  = "#928374", /* black   */
-  [9]  = "#fb4934", /* red     */
-  [10] = "#b8bb26", /* green   */
-  [11] = "#fabd2f", /* yellow  */
-  [12] = "#83a598", /* blue    */
-  [13] = "#d3869b", /* magenta */
-  [14] = "#8ec07c", /* cyan    */
+  [8]  = "#1d2021", /* black   */
+  [9]  = "#9d0006", /* red     */
+  [10] = "#79740e", /* green   */
+  [11] = "#b57614", /* yellow  */
+  [12] = "#076678", /* blue    */
+  [13] = "#8f3f71", /* magenta */
+  [14] = "#83a598", /* cyan    */
   [15] = "#ebdbb2", /* white   */
 };
 
@@ -125,10 +125,11 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor
  */
-unsigned int defaultfg = 15;
-unsigned int defaultbg = 0;
-static unsigned int defaultcs = 15;
-static unsigned int defaultrcs = 257;
+unsigned int defaultfg = 0;
+/* unsigned int defaultbg = 0; */
+unsigned int defaultbg = 15;
+static unsigned int defaultcs = 0;
+static unsigned int defaultrcs = 15;
 
 /*
  * https://invisible-island.net/xterm/ctlseqs/ctlseqs.html#h4-Functions-using-CSI-_-ordered-by-the-final-character-lparen-s-rparen:CSI-Ps-SP-q.1D81
